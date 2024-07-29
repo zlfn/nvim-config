@@ -1,6 +1,7 @@
 ### Feature
 - [X] Plugin with `Packer`
 - [X] Lsp with `Mason` & `Lsp-config`
+- [X] UI with `Hardline`
 - [X] Theme (`Tokyonight`)
 - [X] FileExplorer with `Nvimtree`
 #### Language
