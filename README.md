@@ -15,3 +15,4 @@
 ### TODO
 - [ ] Scala LSP
 - [ ] Replace Packer with other plugin manager
+- [ ] `Suda-vim` for sudo editing
