@@ -18,3 +18,6 @@
 - [ ] `Suda-vim` for sudo editing
 - [ ] Hangul & Kana Keyboard for Command mode
 - [ ] Integrate `gdb`/`pwndbg` ...
+
+### Problems
+- [ ] Solargraph works weird
