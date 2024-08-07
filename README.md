@@ -23,4 +23,4 @@
 - [ ] Integrate `gdb`/`pwndbg` ...
 
 ### Problems
-- [ ] Solargraph works weird
+- [X] Solargraph works weird - RubyMine works same
