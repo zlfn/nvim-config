@@ -29,6 +29,10 @@ require('packer').startup(function(use)
   -- the plugin manager can manage itself
   use {'wbthomason/packer.nvim'}
 
+  --extra hightlighting
+  use {'HerringtonDarkholme/yats.vim'}
+  use {'maxmellon/vim-jsx-pretty'}
+
   --lsp
   use {'williamboman/mason.nvim'}
   use {'williamboman/mason-lspconfig.nvim'}

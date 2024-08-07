@@ -10,10 +10,13 @@
 #### Language
 - [X] `Rust-analyzer`
 - [X] `Solargraph` (ruby)
+- [X] `denols` (js, ts of deno)
+- [X] `vim-jsx-pretty` (jsx, tsx highlighting)
 - Other Mason-competible LSPs (`Clangd`, `Lua-language-server`, `elixir-ls`...)
 
 ### TODO
 - [ ] Scala LSP
+- [ ] tailwindCSS
 - [ ] Replace Packer with other plugin manager
 - [ ] `Suda-vim` for sudo editing
 - [ ] Hangul & Kana Keyboard for Command mode

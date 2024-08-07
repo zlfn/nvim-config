@@ -20,16 +20,35 @@ require('mason-lspconfig').setup({
 
 		["solargraph"] = function()
 			require('lspconfig')["solargraph"].setup({
-				cmd = {
-					"solargraph",
-					"stdio"
-				},
 				on_attach = Lsp_keymap,
 				capabilities = capabilities,
 				root_dir = require('lspconfig').util.root_pattern("Gemfile", ".git", "."),
-				filetypes = {"ruby"}
+				filetypes = {"ruby"},
+				settings = {
+					solargraph = {
+						completion = true,
+						autoformat = false,
+						formatting = true,
+						symbols = true,
+						definitions = true,
+						references = true,
+						folding = true,
+						highlights = true,
+						diagnostics = true,
+						rename = true,
+					}
+				}
 			})
 		end,
+
+		["denols"] = function()
+			require('lspconfig')["denols"].setup({
+				on_attach = Lsp_keymap,
+				capabilities = capabilities,
+				root_dir = require('lspconfig').util.root_pattern("dev.ts", "deno.json", ".git", "."),
+			})
+		end,
+
 
 		["rust_analyzer"] = function()
 			require('lspconfig')["rust_analyzer"].setup({
