@@ -49,7 +49,6 @@ require('mason-lspconfig').setup({
 			})
 		end,
 
-
 		["rust_analyzer"] = function()
 			require('lspconfig')["rust_analyzer"].setup({
 				on_attach = Lsp_keymap,

@@ -4,15 +4,17 @@
 ### Feature
 - [X] Plugin with `Lazy.vim`
 - [X] Lsp with `Mason` & `Lsp-config`
-- [X] UI with `Hardline`
+- [X] Line with `Hardline`
 - [X] Theme (`Tokyonight`)
 - [X] FileExplorer with `Nvimtree`
-#### Language
+- [X] `Tree-sitter` for advanced highlights & autoclose
+#### Ready-to-use LSP
 - [X] `Rust-analyzer`
+- [X] `Clangd`
+- [X] `Lua-language-server`
+- [X] `elixir-ls`
 - [X] `Solargraph` (ruby)
 - [X] `denols` (js, ts of deno)
-- [X] `vim-jsx-pretty` (jsx, tsx highlighting)
-- Other Mason-competible LSPs (`Clangd`, `Lua-language-server`, `elixir-ls`...)
 
 ### TODO
 - [ ] Scala LSP
@@ -20,7 +22,3 @@
 - [ ] `Suda-vim` for sudo editing
 - [ ] Hangul & Kana Keyboard for Command mode
 - [ ] Integrate `gdb`/`pwndbg` ...
-- [X] Replace Packer with other plugin manager
-
-### Problems
-- [X] Solargraph works weird - RubyMine works same

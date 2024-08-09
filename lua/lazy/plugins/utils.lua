@@ -19,5 +19,10 @@ return {
 	},
 
     -- auto close
-	{"m4xshen/autoclose.nvim"}
+	{"Townk/vim-autoclose"},
+	{"windwp/nvim-ts-autotag",
+		dependencies={
+			"nvim-treesitter/nvim-treesitter"
+		}
+	}
 }
