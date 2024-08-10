@@ -1,7 +1,13 @@
 return {
 	-- file explorer
-	{"nvim-tree/nvim-tree.lua"},
-	{"nvim-tree/nvim-web-devicons"},
+	{"nvim-tree/nvim-tree.lua",
+		dependencies={
+			"nvim-tree/nvim-web-devicons"
+		}
+	},
+
+	-- toggle terminal
+	{"akinsho/toggleterm.nvim", config = true},
 
 	-- windows
 	{"anuvyklack/windows.nvim",
@@ -9,6 +15,15 @@ return {
 			"anuvyklack/middleclass",
 			"anuvyklack/animation.nvim"
 		}
+	},
+
+	-- tabs
+	{"romgrk/barbar.nvim",
+		dependencies={
+			"lewis6991/gitsigns.nvim",
+			"nvim-tree/nvim-web-devicons"
+		},
+		init = function() vim.g.barbar_auto_setup = false end,
 	},
 
 	--git

@@ -12,6 +12,7 @@ vim.bo.autoindent = true
 vim.wo.wrap = false
 
 require("lazy.lazy")
+require("barbar").setup()
 require("nvim-ts-autotag").setup()
 
 require('keymap')

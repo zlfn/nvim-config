@@ -19,13 +19,19 @@ Lsp_keymap = function(client, bufnr)
 --  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
 end
 
-vim.keymap.set("n", "`", "<CMD>NvimTreeToggle<CR>")
-vim.keymap.set("n", "~", "<CMD>NvimTreeFocus<CR>")
-
+vim.keymap.set("n", "\\", "<CMD>NvimTreeToggle<CR>")
+vim.keymap.set("n", "|", "<CMD>NvimTreeFocus<CR>")
+vim.keymap.set("n", "<C-\\>", '<CMD>exe v:count1 . "ToggleTerm"<CR>')
 vim.keymap.set("n", "-", "<CMD>w<CR>")
 Execute_keymap = function(script)
 	vim.keymap.set("n", "_", script)
 end
+
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
+
+
+vim.keymap.set("n", "=", "<CMD>BufferPick<CR>")
+vim.keymap.set("n", "+", "<CMD>BufferClose<CR>")
 
 CompleteConfirm = "<CR>"
 AutoComplete = "<Tab>"

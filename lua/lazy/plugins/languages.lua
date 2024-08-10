@@ -1,11 +1,4 @@
 return {
-	-- extra syntax highlights for jsx & tsx
-	--{"HerringtonDarkholme/yats.vim",
-	--	dependencies = {
-	--		"maxmellon/vim-jsx-pretty"
-	--	}
-	--},
-
 	-- mason lsp and its config
 	{"williamboman/mason.nvim"},
 	{"williamboman/mason-lspconfig.nvim"},
