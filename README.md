@@ -1,5 +1,5 @@
+![image](https://github.com/user-attachments/assets/fcfbdfb8-4fb6-4e46-a828-c47cacd6bde3)
 
-<img width="805" alt="nvim" src="https://github.com/user-attachments/assets/3e9b7e70-2be0-4595-9a4e-a3539c932429">
 
 ### Feature
 - [X] Plugin with `Lazy.vim`
@@ -8,6 +8,8 @@
 - [X] Theme (`Tokyonight`)
 - [X] FileExplorer with `Nvimtree`
 - [X] `Tree-sitter` for advanced highlights & autoclose
+- [X] Tab with `Barbar`
+- [X] Integrated terminal with `Toggleterm`  
 #### Ready-to-use LSP
 - [X] `Rust-analyzer`
 - [X] `Clangd`
