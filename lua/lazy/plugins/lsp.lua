@@ -7,11 +7,15 @@ return {
 	-- clean lsp line
 	{url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim"},
 
-	-- lsp for scala
-	{"scalameta/nvim-metals",
-		dependencies = {
-			"nvim-lua/plenary.nvim"
-		}
+
+	-- tailwind integration
+	{"luckasRanarison/tailwind-tools.nvim",
+		dependencies= {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-cmp",
+			"onsails/lspkind-nvim"
+		},
+		opts = {}
 	},
 
 	-- completion engine

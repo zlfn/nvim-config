@@ -11,6 +11,9 @@ return {
 	-- better line number
 	{"myusuf3/numbers.vim"},
 
+	-- indent mini
+	{"nvimdev/indentmini.nvim"},
+
 	-- scroll bar
 	{"petertriho/nvim-scrollbar"},
 }

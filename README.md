@@ -9,15 +9,17 @@
 - [X] FileExplorer with `Nvimtree`
 - [X] `Tree-sitter` for advanced highlights & autoclose
 #### Ready-to-use LSP
+##### mason
 - [X] `Rust-analyzer`
 - [X] `Clangd`
 - [X] `Lua-language-server`
 - [X] `elixir-ls`
 - [X] `Solargraph` (ruby)
 - [X] `denols` (js, ts of deno)
+##### standalone
+- [X] `metals` (nvim-metals)
 
 ### TODO
-- [ ] Scala LSP
 - [ ] tailwindCSS
 - [ ] `Suda-vim` for sudo editing
 - [ ] Hangul & Kana Keyboard for Command mode

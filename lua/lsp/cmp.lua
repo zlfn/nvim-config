@@ -53,5 +53,11 @@ cmp.setup({
 	feedkey("<Plug>(vsnip-jump-prev)", "")
       end
     end, { "i", "s" })
-  }
+  },
+
+  formatting = {
+	  format = require("lspkind").cmp_format({
+		  before = require("tailwind-tools.cmp").lspkind_format
+	  })
+  },
 })

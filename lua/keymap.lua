@@ -32,6 +32,8 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 
 vim.keymap.set("n", "=", "<CMD>BufferPick<CR>")
 vim.keymap.set("n", "+", "<CMD>BufferClose<CR>")
+vim.keymap.set("n", "<Left>", "<CMD>BufferPrevious<CR>")
+vim.keymap.set("n", "<Right>", "<CMD>BufferNext<CR>")
 
 CompleteConfirm = "<CR>"
 AutoComplete = "<Tab>"
