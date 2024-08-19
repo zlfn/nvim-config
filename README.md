@@ -20,7 +20,7 @@
 - [X] `Solargraph` (Ruby)
 - [X] `denols` (JS, TS for deno)
 ##### standalone
-- [X] `metals` (nvim-metals)
+- [X] `nvim-metals` (Scala)
 
 ### TODO
 - [ ] tailwindCSS
