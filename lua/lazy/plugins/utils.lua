@@ -2,7 +2,7 @@ return {
 	-- file explorer
 	{"nvim-tree/nvim-tree.lua",
 		dependencies={
-			"nvim-tree/nvim-web-devicons"
+			"nvim-tree/nvim-web-devicons",
 		}
 	},
 
@@ -38,6 +38,6 @@ return {
 	{"windwp/nvim-ts-autotag",
 		dependencies={
 			"nvim-treesitter/nvim-treesitter"
-		}
+		},
 	}
 }

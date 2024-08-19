@@ -18,6 +18,7 @@ require('mason-lspconfig').setup({
 				})
 		end,
 
+
 		["solargraph"] = function()
 			require('lspconfig')["solargraph"].setup({
 				on_attach = Lsp_keymap,
@@ -61,6 +62,16 @@ require('mason-lspconfig').setup({
 				}
 			})
 			Execute_keymap("<CMD>w<CR><CMD>below term cargo run<CR>")
-		end
+		end,
+
+		-- emmet-ls for rust yew
+		["emmet_ls"] = function()
+			require('lspconfig')["emmet_ls"].setup({
+				on_attach = Lsp_keymap,
+				capabilities = capabilities,
+				filetypes = {"rust"},
+				root_dir = require('lspconfig').util.root_pattern("Cargo.toml", ".git", "."),
+			})
+		end,
 	}
 })

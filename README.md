@@ -12,12 +12,13 @@
 - [X] Integrated terminal with `Toggleterm`  
 #### Ready-to-use LSP
 ##### mason
-- [X] `Rust-analyzer`
-- [X] `Clangd`
-- [X] `Lua-language-server`
-- [X] `elixir-ls`
-- [X] `Solargraph` (ruby)
-- [X] `denols` (js, ts of deno)
+- [X] `Rust-analyzer` (Rust)
+    - [X] `emmet-ls` (Yew)
+- [X] `Clangd` (C, C++)
+- [X] `Lua-language-server` (Lua)
+- [X] `elixir-ls` (Elixir)
+- [X] `Solargraph` (Ruby)
+- [X] `denols` (JS, TS for deno)
 ##### standalone
 - [X] `metals` (nvim-metals)
 
