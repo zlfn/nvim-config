@@ -13,7 +13,6 @@
 #### Ready-to-use LSP
 ##### mason
 - [X] `Rust-analyzer` (Rust)
-    - [X] `emmet-ls` (Yew)
 - [X] `Clangd` (C, C++)
 - [X] `Lua-language-server` (Lua)
 - [X] `elixir-ls` (Elixir)

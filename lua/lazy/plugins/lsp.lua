@@ -10,13 +10,19 @@ return {
 		},
 	},
 
+	{"prabirshrestha/vim-lsp"},
+
 	-- mason lsp and its config
 	{"williamboman/mason.nvim",
 		dependencies = {
-			{"williamboman/mason-lspconfig.nvim"},
+			-- {"williamboman/mason-lspconfig.nvim"},
+			{"vargasd/mason-lspconfig.nvim"},
 			{"neovim/nvim-lspconfig"}
 		}
 	},
+	
+	-- nu
+	{"LhKipp/nvim-nu"},
 
 	-- clean lsp line
 	{url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim"},

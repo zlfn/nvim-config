@@ -50,6 +50,14 @@ require('mason-lspconfig').setup({
 			})
 		end,
 
+		["unocss"] = function()
+			require('lspconfig')["unocss"].setup({
+				on_attach = Lsp_keymap,
+				capabilities = capabilities,
+				root_dir = require('lspconfig').util.root_pattern("uno.config.ts"),
+			})
+		end,
+
 		["rust_analyzer"] = function()
 			require('lspconfig')["rust_analyzer"].setup({
 				on_attach = Lsp_keymap,
@@ -57,21 +65,18 @@ require('mason-lspconfig').setup({
 				checkOnSave = true,
 				check = {
 					enable = true,
-					command = "clippy",
+					command = "cargo check",
 					features = "all",
-				}
+				},
+				settings = {
+					["rust-analyzer"] = {
+						["cargo"] = {
+							["allFeatures"] = true
+						},
+					},
+				},
 			})
 			Execute_keymap("<CMD>w<CR><CMD>below term cargo run<CR>")
-		end,
-
-		-- emmet-ls for rust yew
-		["emmet_ls"] = function()
-			require('lspconfig')["emmet_ls"].setup({
-				on_attach = Lsp_keymap,
-				capabilities = capabilities,
-				filetypes = {"rust"},
-				root_dir = require('lspconfig').util.root_pattern("Cargo.toml", ".git", "."),
-			})
 		end,
 	}
 })

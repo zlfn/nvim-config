@@ -10,6 +10,7 @@ vim.opt["number"] = true
 vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.wo.wrap = false
+vim.g.mapleader = "<Space>"
 
 require("lazy.lazy")
 require("barbar").setup()
@@ -19,6 +20,7 @@ require('keymap')
 require('util/window')
 require('util/nvimtree')
 require('util/autotag')
+require('util/terminal')
 require('lsp/lsp')
 require('lsp/cmp')
 require('lsp/treesitter')

@@ -6,8 +6,12 @@ return {
 		}
 	},
 
-	-- toggle terminal
-	{"akinsho/toggleterm.nvim", config = true},
+	-- terminal
+	{"rebelot/terminal.nvim",
+		config = function()
+			require("terminal").setup()
+		end
+	},
 
 	-- windows
 	{"anuvyklack/windows.nvim",
