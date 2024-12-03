@@ -9,7 +9,8 @@
 - [X] FileExplorer with `Nvimtree`
 - [X] `Tree-sitter` for advanced highlights & autoclose
 - [X] Tab with `Barbar`
-- [X] Integrated terminal with `Toggleterm`  
+- [X] Integrated terminal with `ternimal.nvim`  
+- [X] Fuzzy finder with `telescope`
 #### Ready-to-use LSP
 ##### mason
 - [X] `Rust-analyzer` (Rust)
@@ -26,3 +27,10 @@
 - [ ] `Suda-vim` for sudo editing
 - [ ] Hangul & Kana Keyboard for Command mode
 - [ ] Integrate `gdb`/`pwndbg` ...
+
+### External dependencies
+#### Required
+#### Optional
+* `Coursier` (Scala, nvim-metals)
+* `ripgrep` (telescope)
+* `fd` (telescope)
