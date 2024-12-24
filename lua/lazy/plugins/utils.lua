@@ -6,6 +6,12 @@ return {
 		}
 	},
 
+	-- mark
+	{"chentoast/marks.nvim",
+		event = "VeryLazy",
+		opts = {},
+	},
+
 	-- telescope
 	{"nvim-telescope/telescope.nvim", tag = "0.1.8",
 		dependencies = {
