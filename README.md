@@ -30,6 +30,8 @@
 
 ### External dependencies
 #### Required
+* [`Nertfont`](https://www.nerdfonts.com) (devicon)
+
 #### Optional
 * `Coursier` (Scala, nvim-metals)
 * `ripgrep` (telescope)
