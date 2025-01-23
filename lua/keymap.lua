@@ -57,6 +57,9 @@ vim.keymap.set("n", "+", "<CMD>BufferClose<CR>")
 vim.keymap.set("n", "<Left>", "<CMD>BufferPrevious<CR>")
 vim.keymap.set("n", "<Right>", "<CMD>BufferNext<CR>")
 
+vim.keymap.set("i", "<C-i>", 'copilot#Accept()', { expr = true, silent = true, noremap = false, replace_keycodes = false })
+vim.g.copilot_no_tab_map = true
+
 CompleteConfirm = "<CR>"
 AutoComplete = "<Tab>"
 AutoCompleteBack = "<S-Tab>"
