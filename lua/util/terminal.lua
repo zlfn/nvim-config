@@ -1,7 +1,7 @@
-require('keymap')
+require("keymap")
 
 require("terminal").setup({
-	term_keymap()
+    term_keymap(),
 })
 
 vim.api.nvim_create_autocmd({ "WinEnter", "BufWinEnter", "TermOpen" }, {
@@ -13,5 +13,5 @@ vim.api.nvim_create_autocmd({ "WinEnter", "BufWinEnter", "TermOpen" }, {
 })
 
 vim.api.nvim_create_autocmd("TermOpen", {
-    command = [[setlocal nonumber norelativenumber winhl=Normal:NormalFloat]]
+    command = [[setlocal nonumber norelativenumber winhl=Normal:NormalFloat]],
 })
