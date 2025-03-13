@@ -20,12 +20,6 @@ return {
         end,
     },
 
-    -- windows
-    { "anuvyklack/windows.nvim", dependencies = {
-        "anuvyklack/middleclass",
-        "anuvyklack/animation.nvim",
-    } },
-
     -- smooth scroll
     { "karb94/neoscroll.nvim", opts = {} },
 

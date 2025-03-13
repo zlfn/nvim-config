@@ -7,6 +7,8 @@ local pack_path = fn.stdpath("data") .. "/site/pack"
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4
 vim.opt["number"] = true
+vim.opt["expandtab"] = true
+vim.opt["exrc"] = true
 vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.wo.wrap = false
@@ -17,7 +19,6 @@ require("barbar").setup()
 require("nvim-ts-autotag").setup()
 
 require("keymap")
-require("util/window")
 require("util/nvimtree")
 require("util/autotag")
 require("util/terminal")
