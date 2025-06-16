@@ -3,6 +3,7 @@ local fn = vim.fn
 local fmt = string.format
 
 local pack_path = fn.stdpath("data") .. "/site/pack"
+vim.o.shell = "/opt/homebrew/bin/fish"
 
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4

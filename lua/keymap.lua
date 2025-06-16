@@ -23,6 +23,10 @@ vim.keymap.set("n", "\\", "<CMD>NvimTreeToggle<CR>")
 vim.keymap.set("n", "|", "<CMD>NvimTreeFocus<CR>")
 vim.keymap.set("n", "-", "<CMD>w<CR>")
 
+vim.keymap.set("n", "<leader>o", "<CMD>Oil<CR>", { desc = "Open oil.nvim" })
+
+vim.keymap.set("n", "<leader>cc", "<cmd>ClaudeCode<cr>", { desc = "Toggle Claude Code" })
+
 term_keymap = function()
     local term_map = require("terminal.mappings")
     vim.keymap.set({ "n", "x" }, "<leader>ts", term_map.operator_send, { expr = true })

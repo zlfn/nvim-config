@@ -40,6 +40,13 @@ return {
         "nvim-lua/plenary.nvim",
     } },
 
+    -- oil.nvim - edit directories like buffers
+    {
+        "stevearc/oil.nvim",
+        opts = {},
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+
     -- auto close
     { "Townk/vim-autoclose" },
     { "windwp/nvim-ts-autotag", dependencies = {
